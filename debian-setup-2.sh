@@ -23,4 +23,3 @@ for i in *; do
     ln -snfv ~/dotfiles/config/"$i" ~/.config/
 done
 cd ..
-source ~/.zshrc
