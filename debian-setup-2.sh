@@ -2,6 +2,9 @@
 cp ~/.zshrc  ~/dotfiles/.zshrc  
 mv ~/.p10k.zsh ~/dotfiles/zsh/p10k.zsh
 
+rm -r ~/.config/i3 
+rm -r ~/.config/kitty
+rm -r ~/.config/neofetch
 #dotfiles
 set -u
 
