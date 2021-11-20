@@ -13,7 +13,7 @@ done
 #config
 cd config 
 for i in *; do
-    sudo ln -snfv ~/dotfiles/config/"$i" ~/.config/
+    ln -snfv ~/dotfiles/config/"$i" ~/.config/
 done
 cd ..
 source ~/.zshrc
