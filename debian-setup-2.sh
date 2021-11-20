@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/usr/bin/zsh
 
-cp ~/.zshrc  ~/dotfiles/.zshrc  
+cp ~/tmp.txt ~/dotfiles/.zshrc  
 mv ~/.p10k.zsh ~/dotfiles/zsh/p10k.zsh
 
 rm -r ~/.config/i3 
