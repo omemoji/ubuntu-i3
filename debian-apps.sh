@@ -7,6 +7,7 @@ mkdir ~/Downloads
 mkdir ~/Downloads/deb
 mkdir ~/Downloads/iso
 mkdir ~/Documents
+mkdir ~/Pictures/screenshot
 
 #apps
 yes | sudo apt install firefox-esr webext-https-everywhere webext-ublock-origin-firefox \
@@ -45,3 +46,5 @@ yes | sudo apt install ~/Downloads/deb/teams.deb
 
 yes | sudo apt update 
 yes | sudo apt upgrade
+
+/usr/bin/zsh
