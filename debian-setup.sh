@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/bin/bash
 chsh -s /usr/bin/zsh
 yes | sudo apt update
 yes | sudo apt upgrade
