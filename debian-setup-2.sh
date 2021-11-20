@@ -1,4 +1,5 @@
 #!/bin/bash
+cp ~/.zshrc  ~/dotfiles/.zshrc  
 mv ~/.p10k.zsh ~/dotfiles/zsh/p10k.zsh
 
 #dotfiles

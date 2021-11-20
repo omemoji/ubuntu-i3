@@ -10,19 +10,18 @@ mkdir ~/Documents
 
 #apps
 yes | sudo apt install firefox-esr webext-https-everywhere webext-ublock-origin-firefox \
-htop rclone tlp w3m w3m-img compton neofetch aria2 manpages-ja-dev httrack ffmpeg \
-ardour blender gimp gimp-gmic krita arandr \
-torbrowser-launcher proxychains tor filezilla \
-libarchive-tools xorriso p7zip-full gzip whois \
-qemu-system libvirt-clients libvirt-daemon-system timeshift \
-default-jdk 
+htop rclone tlp w3m w3m-img compton neofetch aria2 manpages-ja-dev httrack ffmpeg 
+#ardour blender gimp gimp-gmic krita arandr \
+#torbrowser-launcher proxychains tor filezilla \
+#libarchive-tools xorriso p7zip-full gzip whois \
+#qemu-system libvirt-clients libvirt-daemon-system timeshift
 
 
 #VSCode
 yes | curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor -o /usr/share/keyrings/ms-vscode-keyring.gpg
 yes | echo "deb [arch=amd64 signed-by=/usr/share/keyrings/ms-vscode-keyring.gpg] https://packages.microsoft.com/repos/vscode stable main" | sudo tee /etc/apt/sources.list.d/vscode.list
 yes | sudo apt update
-yes | sudo apt install code
+#yes | sudo apt install code
 
 #google-earth
 wget http://dl.google.com/dl/earth/client/current/google-earth-stable_current_amd64.deb -O ~/Downloads/deb/google-earth.deb
@@ -42,14 +41,13 @@ yes | sudo apt install ~/Downloads/deb/steam.deb
 #teams
 wget https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.4.00.4855_amd64.deb -O ~/Downloads/deb/teams.deb
 yes | sudo apt update
-yes | sudo apt install ~/Downloads/deb/teams.deb
+#yes | sudo apt install ~/Downloads/deb/teams.deb
 
-yes | sudo apt update
-
+yes | sudo apt update 
+yes | sudo apt upgrade
 # install zinit
 cp ~/dotfiles/.zshrc  ~/.zshrc
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
-cp ~/.zshrc  ~/dotfiles/.zshrc  
 
 echo "zinit ice depth=1; zinit light romkatv/powerlevel10k" >> ~/.zshrc
 
