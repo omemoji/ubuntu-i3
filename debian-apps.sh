@@ -33,6 +33,8 @@ yes | sudo apt install ~/Downloads/deb/google-earth.deb
 wget https://protonvpn.com/download/protonvpn-stable-release_1.0.1-1_all.deb -O ~/Downloads/deb/protonvpn.deb
 yes | sudo apt update
 yes | sudo apt install ~/Downloads/deb/protonvpn.deb
+yes | sudo apt update
+ys  | sudo apt install protonvpn
 
 #steam
 wget https://steamcdn-a.akamaihd.net/client/installer/steam.deb -O ~/Downloads/deb/steam.deb
