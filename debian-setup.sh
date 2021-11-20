@@ -48,7 +48,16 @@ yes | sudo apt upgrade
 # install zinit
 cp ~/dotfiles/.zshrc  ~/.zshrc
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
+source ~/.zshrc
+zinit update
 
-echo "zinit ice depth=1; zinit light romkatv/powerlevel10k" >> ~/.zshrc
+cat <<"EOL" >> ~/.zshrc
+SCRIPT_DIR=$HOME/dotfiles
 
+for file in $SCRIPT_DIR/zsh/*.zsh; do
+  source "$file"
+done
+EOL
+
+source ~/.zshrc
 

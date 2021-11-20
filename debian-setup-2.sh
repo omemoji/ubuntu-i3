@@ -1,10 +1,13 @@
 #!/bin/bash
+
 cp ~/.zshrc  ~/dotfiles/.zshrc  
 mv ~/.p10k.zsh ~/dotfiles/zsh/p10k.zsh
 
 rm -r ~/.config/i3 
 rm -r ~/.config/kitty
 rm -r ~/.config/neofetch
+rm -r ~/.config/ranger
+rm -r ~/.config/screengrab
 #dotfiles
 set -u
 
