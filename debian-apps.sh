@@ -8,7 +8,7 @@ mkdir ~/Downloads/deb
 mkdir ~/Downloads/iso
 mkdir ~/Documents
 mkdir ~/Pictures/screenshot
-XKBOPTIONS="ctrl:nocaps"
+sudo cp keyboard /etc/default/keyboard
 sudo systemctl restart console-setup
 #apps
 yes | sudo apt install firefox-esr webext-https-everywhere webext-ublock-origin-firefox \
@@ -41,7 +41,7 @@ yes | sudo apt update
 yes | sudo apt install ~/Downloads/deb/teams.deb
 
 #inkscape 
-echo "deb http://deb.debian.org/debian bullseye-backports main" >> sudo tee /etc/apt/sources.list
+yes | echo "deb http://deb.debian.org/debian bullseye-backports main" | sudo tee /etc/apt/sources.list
 yes | sudo apt update
 yes | sudo apt -t bullseye-backports install inkscape 
 
