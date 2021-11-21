@@ -21,4 +21,4 @@ for file in $SCRIPT_DIR/zsh/*.zsh; do
 done
 EOL
 cp ~/.zshrc ~/tmp.txt
-exit
+killall kitty
