@@ -24,6 +24,9 @@ for i in *; do
 done
 cd ..
 #vscode 
+code
+echo "待機中..."
+sleep 10;killall code
 rm -r ~/.config/Code/User/settings.json
 ln -snfv ~/dotfiles/settings.json ~/.config/Code/User/
 rm ~/tmp.txt
