@@ -10,5 +10,6 @@
     "code-runner.executorMap": {
         "python": "/usr/bin/python3"
     },
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "terminal.integrated.defaultProfile.linux": "zsh"
 }

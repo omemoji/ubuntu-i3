@@ -11,7 +11,7 @@ mkdir ~/Pictures/screenshot
 
 #apps
 yes | sudo apt install firefox-esr webext-https-everywhere webext-ublock-origin-firefox \
-htop rclone tlp w3m w3m-img compton neofetch aria2 manpages-ja-dev httrack ffmpeg 
+htop rclone tlp w3m w3m-img compton neofetch aria2 manpages-ja-dev httrack ffmpeg arandr \
 ardour blender gimp gimp-gmic krita arandr \
 torbrowser-launcher proxychains tor filezilla \
 libarchive-tools xorriso p7zip-full gzip whois \
@@ -29,13 +29,6 @@ wget http://dl.google.com/dl/earth/client/current/google-earth-stable_current_am
 yes | sudo apt update
 yes | sudo apt install ~/Downloads/deb/google-earth.deb
 
-#protonvpn
-wget https://protonvpn.com/download/protonvpn-stable-release_1.0.1-1_all.deb -O ~/Downloads/deb/protonvpn.deb
-yes | sudo apt update
-yes | sudo apt install ~/Downloads/deb/protonvpn.deb
-yes | sudo apt update
-ys  | sudo apt install protonvpn
-
 #steam
 wget https://steamcdn-a.akamaihd.net/client/installer/steam.deb -O ~/Downloads/deb/steam.deb
 yes | sudo apt update
@@ -47,9 +40,13 @@ yes | sudo apt update
 yes | sudo apt install ~/Downloads/deb/teams.deb
 
 #inkscape 
-echo "deb http://deb.debian.org/debian bullseye-backports main" >> /etc/apt/sources.list
+echo "deb http://deb.debian.org/debian bullseye-backports main" >> sudo tee /etc/apt/sources.list
 yes | sudo apt update
 yes | sudo apt -t bullseye-backports install inkscape 
+
+#yt-dlp
+sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
+sudo chmod a+rx /usr/local/bin/yt-dlp
 
 yes | sudo apt update 
 yes | sudo apt upgrade

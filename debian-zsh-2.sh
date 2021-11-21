@@ -25,6 +25,6 @@ done
 cd ..
 #vscode 
 VSCODE_SETTING_DIR=~/.config/Code/User/
-rm -r VSCODE_SETTING_DIR/setting.json
-ln -snfv ~/dotfiles/setting.json VSCODE_SETTING_DIR
+rm -r $VSCODE_SETTING_DIR/setting.json
+ln -snfv ~/dotfiles/setting.json $VSCODE_SETTING_DIR
 rm ~/tmp.txt
