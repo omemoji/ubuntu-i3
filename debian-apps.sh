@@ -8,7 +8,8 @@ mkdir ~/Downloads/deb
 mkdir ~/Downloads/iso
 mkdir ~/Documents
 mkdir ~/Pictures/screenshot
-
+XKBOPTIONS="ctrl:nocaps"
+sudo systemctl restart console-setup
 #apps
 yes | sudo apt install firefox-esr webext-https-everywhere webext-ublock-origin-firefox \
 htop rclone tlp w3m w3m-img compton neofetch aria2 manpages-ja-dev httrack ffmpeg arandr \
