@@ -46,6 +46,11 @@ wget https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.4.0
 yes | sudo apt update
 yes | sudo apt install ~/Downloads/deb/teams.deb
 
+#inkscape 
+echo "deb http://deb.debian.org/debian bullseye-backports main" >> /etc/apt/sources.list
+yes | sudo apt update
+yes | sudo apt -t bullseye-backports install inkscape 
+
 yes | sudo apt update 
 yes | sudo apt upgrade
 
