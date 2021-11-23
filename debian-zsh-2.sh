@@ -20,6 +20,7 @@ for f in .??*; do
     [ "$f" = ".bashrc" ] && continue
     [ "$f" = ".bash_history" ] && continue
     [ "$f" = ".bashrc" ] && continue
+    [ "$f" = ".wget-hsts" ] && continue
     ln -snfv ~/dotfiles/"$f" ~/
 done
 #config
@@ -33,6 +34,7 @@ code
 echo "待機中..."
 sleep 6;killall code
 echo "fs.inotify.max_user_watches=524288" | sudo tee /etc/sysctl.conf
+sudo sysctl -p
 rm -r ~/.config/Code/User/settings.json
 ln -snfv ~/dotfiles/settings.json ~/.config/Code/User/
 rm ~/tmp.txt

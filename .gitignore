@@ -4,6 +4,7 @@
 .#*
 .*~
 *~
+.zshrc
 .DS_Store
 *.sw[po]
 tags
@@ -26,5 +27,5 @@ samples
 .rsync_cache
 .vscode
 .fehbg
-.zshrc
+.wget-hsts
 p10k.zsh
