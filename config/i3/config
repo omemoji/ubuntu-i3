@@ -43,8 +43,8 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
-bindsym Shift+a+t exec i3-sensible-terminal
+bindsym $mod+Return exec kitty
+bindsym Shift+a+t exec kitty
 #bindsym $mod+Return exec alacritty
 
 # kill focused window
