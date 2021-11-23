@@ -3,14 +3,23 @@ chsh -s /usr/bin/zsh
 yes | sudo apt update
 yes | sudo apt upgrade
 
+mkdir ~/github
+mkdir ~/Pictures
+mkdir ~/Pictures/wallpaper 
+mkdir ~/Pictures/screenshot
+wget https://www.omemoji.dev/assets/wallpaper/wallpaper01.png -O /home/omemoji/Pictures/wallpaper/wallpaper01.png
 mkdir ~/Downloads
 mkdir ~/Downloads/deb
 mkdir ~/Downloads/iso
 mkdir ~/Documents
+mkdir ~/googledrive
+mkdir ~/programming
 mkdir ~/Pictures/screenshot
 sudo cp keyboard /etc/default/keyboard
 sudo systemctl restart console-setup
+sudo cp sources.list /etc/apt/sources.list
 #apps
+yes | sudo apt update
 yes | sudo apt install firefox-esr webext-https-everywhere webext-ublock-origin-firefox \
 htop rclone tlp w3m w3m-img compton neofetch aria2 manpages-ja-dev httrack ffmpeg arandr \
 ardour blender gimp gimp-gmic krita arandr \
@@ -30,18 +39,12 @@ wget http://dl.google.com/dl/earth/client/current/google-earth-stable_current_am
 yes | sudo apt update
 yes | sudo apt install ~/Downloads/deb/google-earth.deb
 
-#steam
-wget https://steamcdn-a.akamaihd.net/client/installer/steam.deb -O ~/Downloads/deb/steam.deb
-yes | sudo apt update
-yes | sudo apt install ~/Downloads/deb/steam.deb
-
 #teams
 wget https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.4.00.4855_amd64.deb -O ~/Downloads/deb/teams.deb
 yes | sudo apt update
 yes | sudo apt install ~/Downloads/deb/teams.deb
 
 #inkscape 
-yes | echo "deb http://deb.debian.org/debian bullseye-backports main" | sudo tee /etc/apt/sources.list
 yes | sudo apt update
 yes | sudo apt -t bullseye-backports install inkscape 
 

@@ -17,10 +17,14 @@ Session.vim
 *.elc
 .zshrc.local
 samples
-
+.Xauthority
+.zsh_history
 .vim/bundle/
 .vim/dein/
 .vim/.netrwhist
 .vimrc_sample
-
 .rsync_cache
+.vscode
+.fehbg
+.zshrc
+p10k.zsh
