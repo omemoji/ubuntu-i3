@@ -20,9 +20,9 @@ sudo systemctl restart console-setup
 sudo cp sources.list /etc/apt/sources.list
 #apps
 yes | sudo apt update
-yes | sudo apt install firefox-esr webext-https-everywhere webext-ublock-origin-firefox \
-htop rclone tlp w3m w3m-img compton neofetch aria2 manpages-ja-dev httrack ffmpeg arandr \
-ardour blender gimp gimp-gmic krita arandr \
+
+yes | sudo apt install htop rclone tlp w3m w3m-img compton neofetch aria2 manpages-ja-dev httrack ffmpeg arandr \
+ardour blender gimp gimp-gmic krita \
 torbrowser-launcher proxychains tor filezilla \
 libarchive-tools xorriso p7zip-full gzip whois \
 qemu-system libvirt-clients libvirt-daemon-system timeshift
