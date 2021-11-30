@@ -11,5 +11,6 @@
         "python": "/usr/bin/python3"
     },
     "explorer.confirmDragAndDrop": false,
-    "terminal.integrated.defaultProfile.linux": "zsh"
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "python.defaultInterpreterPath": "python3"
 }
