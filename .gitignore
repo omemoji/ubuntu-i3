@@ -4,6 +4,7 @@
 .#*
 .*~
 *~
+.vscode/extensions/
 .zshrc
 .DS_Store
 *.sw[po]
@@ -25,7 +26,6 @@ samples
 .vim/.netrwhist
 .vimrc_sample
 .rsync_cache
-.vscode
 .fehbg
 .wget-hsts
 p10k.zsh
