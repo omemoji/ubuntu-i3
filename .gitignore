@@ -5,8 +5,8 @@
 .*~
 *~
 .vscode/extensions/
-.zshrc
 .DS_Store
+screengrab.conf
 *.sw[po]
 tags
 TAGS
