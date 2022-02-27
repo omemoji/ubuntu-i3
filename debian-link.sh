@@ -1,9 +1,7 @@
 #!/usr/bin/zsh
-cp ~/tmp.txt ~/dotfiles/.zshrc  
-mv ~/.p10k.zsh ~/dotfiles/zsh/p10k.zsh
-
 rm -r ~/.config/i3 
 rm -r ~/.config/kitty
+rm -r ~/.config/alacritty
 rm -r ~/.config/neofetch
 rm -r ~/.config/ranger
 rm -r ~/.config/screengrab
@@ -37,4 +35,3 @@ echo "fs.inotify.max_user_watches=524288" | sudo tee /etc/sysctl.conf
 sudo sysctl -p
 rm -r ~/.config/Code/User/settings.json
 ln -snfv ~/dotfiles/settings.json ~/.config/Code/User/
-rm ~/tmp.txt
