@@ -1,22 +1,40 @@
 #!/bin/bash
-sudo cp sources.list /etc/apt/sources.list
-#apps
+sudo add-apt-repository multiverse
 yes | sudo apt update
 yes | sudo apt upgrade
 
+#essential
+yes | sudo apt install i3 i3status dmenu xserver-xorg xinit\
+xarchiver thunar gvfs autofs ranger gvfs-backends atool thunar-archive-plugin\
+zsh python3-pip build-essential curl wget git nano vim python3 \
+fcitx fcitx-mozc fonts-noto font-manager\
+network-manager network-manager-gnome blueman openssh-server \
+software-properties-common apt-transport-https ppa-purge\
+pulseaudio pavucontrol alsa-utils \
+evince feh vlc ristretto screengrab 
 
-yes | sudo apt install htop rclone tlp w3m w3m-img compton picom neofetch aria2 manpages-ja-dev httrack ffmpeg arandr \
-ardour blender gimp gimp-gmic krita \
+#apps
+yes | sudo apt install htop rclone tlp w3m w3m-img compton picom neofetch aria2 man httrack ffmpeg arandr \
 torbrowser-launcher proxychains tor filezilla \
+ardour blender/
 libarchive-tools xorriso p7zip-full gzip whois \
 qemu-system libvirt-clients libvirt-daemon-system timeshift
 
+#Google Chrome
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O ~/Downloads/deb/google-chrome.deb
+yes | sudo apt update
+yes | sudo apt install ~/Downloads/deb/google-chrome.deb
 
 #VSCode
 yes | curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor -o /usr/share/keyrings/ms-vscode-keyring.gpg
 yes | echo "deb [arch=amd64 signed-by=/usr/share/keyrings/ms-vscode-keyring.gpg] https://packages.microsoft.com/repos/vscode stable main" | sudo tee /etc/apt/sources.list.d/vscode.list
 yes | sudo apt update
 yes | sudo apt install code
+
+#Alacritty
+yes | sudo add-apt-repository ppa:aslatter/ppa
+yes | sudo apt update
+yes | sudo apt install alacritty
 
 #google-earth
 wget http://dl.google.com/dl/earth/client/current/google-earth-stable_current_amd64.deb -O ~/Downloads/deb/google-earth.deb
@@ -28,9 +46,20 @@ wget https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.4.0
 yes | sudo apt update
 yes | sudo apt install ~/Downloads/deb/teams.deb
 
-#inkscape 
+#Gimp
+yes | sudo add-apt-repository ppa:ubuntuhandbook1/gimp
 yes | sudo apt update
-yes | sudo apt -t bullseye-backports install inkscape 
+yes | sudo apt install gimp
+
+#Inkscape 
+sudo add-apt-repository ppa:inkscape.dev/stable
+sudo apt update
+sudo apt install inkscape
+
+#Krita
+sudo add-apt-repository ppa:kritalime/ppa
+sudo apt update
+sudo apt install krita
 
 #yt-dlp
 sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp

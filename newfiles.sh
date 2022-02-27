@@ -13,3 +13,5 @@ mkdir ~/Documents
 mkdir ~/googledrive
 mkdir ~/programming
 mkdir ~/.fonts
+sudo cp keyboard /etc/default/keyboard
+sudo systemctl restart console-setup

@@ -1,5 +1,5 @@
 # dotfiles
 ## Ubuntu
-
+`newfiles.sh -> debian-apps.sh -> debian-link.sh`
 ## Debian 
-`newfiles.sh -> debian-first.sh -> debian-apps.sh -> debian-link.sh`
+`newfiles.sh -> debian-apps.sh -> debian-link.sh`
