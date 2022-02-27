@@ -1,10 +1,10 @@
 #!/bin/bash
-sudo add-apt-repository multiverse
 yes | sudo apt update
 yes | sudo apt upgrade
 
 #essential
-yes | sudo apt install i3 i3status dmenu xserver-xorg xinit \
+yes | sudo apt install xserver-xorg xinit --no-install-recommends \
+yes | sudo apt install i3 i3status dmenu \
 xarchiver thunar gvfs autofs ranger gvfs-backends atool thunar-archive-plugin \
 zsh python3-pip build-essential curl wget git nano vim python3 \
 fcitx fcitx-mozc fonts-noto font-manager \
@@ -52,14 +52,14 @@ yes | sudo apt update
 yes | sudo apt install gimp
 
 #Inkscape 
-sudo add-apt-repository ppa:inkscape.dev/stable
-sudo apt update
-sudo apt install inkscape
+yes | sudo add-apt-repository ppa:inkscape.dev/stable
+yes | sudo apt update
+yes | sudo apt install inkscape
 
 #Krita
-sudo add-apt-repository ppa:kritalime/ppa
-sudo apt update
-sudo apt install krita
+yes | sudo add-apt-repository ppa:kritalime/ppa
+yes | sudo apt update
+yes | sudo apt install krita
 
 #yt-dlp
 sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
