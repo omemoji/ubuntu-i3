@@ -1,27 +1,9 @@
-#!/usr/bin/zsh
-chsh -s /usr/bin/zsh
+#!/bin/bash
+#apps
 yes | sudo apt update
 yes | sudo apt upgrade
 
-mkdir ~/github
-mkdir ~/Pictures
-mkdir ~/Pictures/wallpaper 
-mkdir ~/Pictures/screenshot
-wget https://www.omemoji.dev/assets/wallpaper/wallpaper01.png -O /home/omemoji/Pictures/wallpaper/wallpaper01.png
-mkdir ~/Downloads
-mkdir ~/Downloads/deb
-mkdir ~/Downloads/iso
-mkdir ~/Documents
-mkdir ~/googledrive
-mkdir ~/programming
-mkdir ~/Pictures/screenshot
-sudo cp keyboard /etc/default/keyboard
-sudo systemctl restart console-setup
-sudo cp sources.list /etc/apt/sources.list
-#apps
-yes | sudo apt update
-
-yes | sudo apt install htop rclone tlp w3m w3m-img compton neofetch aria2 manpages-ja-dev httrack ffmpeg arandr \
+yes | sudo apt install htop rclone tlp w3m w3m-img compton picom neofetch aria2 manpages-ja-dev httrack ffmpeg arandr \
 ardour blender gimp gimp-gmic krita \
 torbrowser-launcher proxychains tor filezilla \
 libarchive-tools xorriso p7zip-full gzip whois \
@@ -54,5 +36,3 @@ sudo chmod a+rx /usr/local/bin/yt-dlp
 
 yes | sudo apt update 
 yes | sudo apt upgrade
-
-/usr/bin/zsh

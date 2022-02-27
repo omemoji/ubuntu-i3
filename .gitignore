@@ -4,7 +4,6 @@
 .#*
 .*~
 *~
-.vscode/extensions/
 .DS_Store
 screengrab.conf
 *.sw[po]

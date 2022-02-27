@@ -1,5 +1,5 @@
 {
-    "editor.fontFamily": "'MesloLGS NF','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontFamily": "'Menlo','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "security.workspace.trust.enabled": false,
     "workbench.colorTheme": "Monokai",
     "liveServer.settings.donotShowInfoMsg": true,
