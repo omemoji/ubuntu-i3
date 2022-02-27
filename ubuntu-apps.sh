@@ -4,15 +4,15 @@ yes | sudo apt upgrade
 
 #essential
 yes | sudo apt install xserver-xorg
-yes | sudo apt install --no-install-recommends xinit 
+yes | sudo apt install --no-install-recommends xinit network-manager-gnome evince 
 yes | sudo apt install i3 i3status dmenu \
 xarchiver thunar gvfs autofs ranger gvfs-backends atool thunar-archive-plugin \
 zsh python3-pip build-essential curl wget git nano vim python3 \
 fcitx fcitx-mozc fonts-noto font-manager \
-network-manager network-manager-gnome blueman openssh-server \
+network-manager blueman openssh-server \
 software-properties-common apt-transport-https ppa-purge \
 pulseaudio pavucontrol alsa-utils \
-evince feh vlc ristretto screengrab 
+feh vlc ristretto screengrab 
 
 #apps
 yes | sudo apt install htop rclone tlp w3m w3m-img compton picom neofetch aria2 man httrack ffmpeg arandr \
