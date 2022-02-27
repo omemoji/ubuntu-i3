@@ -4,7 +4,7 @@ yes | sudo apt upgrade
 
 #essential
 yes | sudo apt install xserver-xorg
-yes | sudo apt install xinit --no-install-recommends \
+yes | sudo apt install xinit --no-install-recommends
 yes | sudo apt install i3 i3status dmenu \
 xarchiver thunar gvfs autofs ranger gvfs-backends atool thunar-archive-plugin \
 zsh python3-pip build-essential curl wget git nano vim python3 \
