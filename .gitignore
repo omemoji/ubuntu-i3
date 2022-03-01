@@ -5,7 +5,7 @@
 .*~
 *~
 .DS_Store
-screengrab/screengrab.conf
+screengrab.conf
 *.sw[po]
 tags
 TAGS

@@ -49,7 +49,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec kitty
-bindsym Shift+a+t exec kitty
+bindsym Return+a+t exec kitty
 #bindsym $mod+Return exec alacritty
 
 # kill focused window
