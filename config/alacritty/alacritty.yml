@@ -3,7 +3,7 @@ window:
 colors:
   # Default colors
   primary:
-    background: '0x002025'
+    background: '0x001520'
     foreground: '0xeeeeee'
   # Normal colors
   normal:
@@ -66,5 +66,5 @@ font:
     style: Italic
 
   # Point size
-  size: 8.0
+  size: 9.50
   # env

@@ -1,11 +1,13 @@
 yes | sudo dnf check-update
 yes | sudo dnf upgrade
 
+yes | sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm 
+
 #essential
-yes | sudo dnf groupinstall "Development Tools"
+yes | sudo dnf groupinstall "Development Tools" alacritty
 yes | sudo dnf install zsh python3-pip curl wget git nano vim python3 cmake \
 fcitx fcitx-kkc fcitx-configtool \
-ristretto feh picom screengrab vlc \
+ristretto feh picom vlc \
 blueman 
 
 #apps 
