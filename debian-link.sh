@@ -5,6 +5,7 @@ rm -r ~/.config/alacritty
 rm -r ~/.config/neofetch
 rm -r ~/.config/ranger
 rm -r ~/.config/screengrab
+rm ~/.zshrc
 #dotfiles
 set -u
 
