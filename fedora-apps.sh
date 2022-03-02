@@ -34,7 +34,7 @@ yes | sudo dnf install code
 
 #teams 
 sudo sh -c 'echo -e "[teams]\nname=teams\nbaseurl=https://packages.microsoft.com/yumrepos/ms-teams\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/teams.repo'
-udo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 yes | sudo dnf check-update
 yes | sudo dnf install teams
 
