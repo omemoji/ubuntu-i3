@@ -1,17 +1,22 @@
 yes | sudo dnf check-update
 yes | sudo dnf upgrade
 
-yes | sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm 
+yes | sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+yes | sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+yes | sudo dnf install dnf-plugins-core
 
 #essential
-yes | sudo dnf groupinstall "Development Tools" alacritty
-yes | sudo dnf install zsh python3-pip curl wget git nano vim python3 cmake \
-fcitx fcitx-kkc fcitx-configtool \
+yes | sudo dnf check-update
+yes | sudo dnf upgrade
+yes | sudo dnf remove ibus
+yes | sudo dnf groupinstall "Development Tools"
+yes | sudo dnf install zsh python3-pip curl wget git nano vim python3 cmake alacritty \
+fcitx5 fcitx5-mozc google-noto-cjk-fonts \
 ristretto feh picom vlc \
 blueman 
 
 #apps 
-yes | sudo apt install htop rclone tlp w3m compton picom neofetch yt-dlp aria2 man httrack ffmpeg arandr \
+yes | sudo apt install htop rclone tlp w3m picom neofetch yt-dlp aria2 man httrack ffmpeg arandr \
 torbrowser-launcher proxychains-ng tor filezilla \
 inkscape krita gimp blender
 
@@ -32,3 +37,9 @@ sudo sh -c 'echo -e "[teams]\nname=teams\nbaseurl=https://packages.microsoft.com
 udo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 yes | sudo dnf check-update
 yes | sudo dnf install teams
+
+#discord
+yes | sudo dnf install discord
+
+#steam
+sudo dnf install steam

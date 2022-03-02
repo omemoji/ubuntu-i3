@@ -33,7 +33,7 @@ exec --no-startup-id nm-applet
 
 #exec --no-startup-id "WINIT_X11_SCALE_FACTOR=1.66 alacritty"
 exec --no-startup-id picom
-exec --no-startup-id fcitx
+exec --no-startup-id fcitx5
 #exec --no-startup-id xsetwacom --set 10 MapToOutput "HDMI-A-0"
 #exec --no-startup-id xsetwacom --set 16 MapToOutput "HDMI-A-0"
 exec --no-startup-id "feh --bg-scale ~/Pictures/wallpaper/wallpaper01.png"
