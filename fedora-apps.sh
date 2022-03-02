@@ -42,4 +42,4 @@ yes | sudo dnf install teams
 yes | sudo dnf install discord
 
 #steam
-sudo dnf install steam
+yes | sudo dnf install steam
