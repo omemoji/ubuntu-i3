@@ -1,31 +1,32 @@
-window:
-  opacity: 0.75
+
+background_opacity: 0.75
 colors:
   # Default colors
   primary:
-    background: '0x001520'
-    foreground: '0xeeeeee'
+    background: '#091622'
+    foreground: '#ffffff'
+
   # Normal colors
   normal:
-    black:   '0x333333'
-    red:     '0xff3c00'
-    green:   '0xb1e244'
-    yellow:  '0xffc300'
-    blue:    '0x5760ff'
-    magenta: '0xe600c0'
-    cyan:    '0x00ffff'
-    white:   '0xeee8d5'
+   black:   '#272822'
+   red:     '#F92672'
+   green:   '#A6E22E'
+   yellow:  '#F4BF75'
+   blue:    '#66D9EF'
+   magenta: '#AE81FF'
+   cyan:    '#A1EFE4'
+   white:   '#F8F8F2'
 
   # Bright colors
   bright:
-    black:   '0x888800'
-    red:     '0xff0000'
-    green:   '0x00ff00'
-    yellow:  '0xffff00'
-    blue:    '0x0000ff'
-    magenta: '0xff00ff'
-    cyan:    '0x00ffff'
-    white:   '0xffffff'
+   black:   '#75715E'
+   red:     '#F92672'
+   green:   '#A6E22E'
+   yellow:  '#F4BF75'
+   blue:    '#66D9EF'
+   magenta: '#AE81FF'
+   cyan:    '#A1EFE4'
+   white:   '#F9F8F5'
 font:
   # Normal (roman) font face
   normal:
@@ -66,5 +67,13 @@ font:
     style: Italic
 
   # Point size
-  size: 9.50
-  # env
+  size: 15
+
+#shell:
+#  program: /usr/bin/zsh
+#  args: 
+#    - -l
+#    - -c
+#   - "tmux attach || tmux"
+#env:
+#  TERM: alacritty
