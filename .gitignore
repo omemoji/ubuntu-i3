@@ -27,3 +27,4 @@ samples
 .rsync_cache
 .fehbg
 .wget-hsts
+78-Reject.conf

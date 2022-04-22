@@ -1,29 +1,35 @@
 yes | sudo dnf check-update
 yes | sudo dnf upgrade
 
-yes | sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
-yes | sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-yes | sudo dnf install dnf-plugins-core
+yes | sudo dnf install 	--refresh https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+yes | sudo dnf install 	--refresh https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+yes | sudo dnf check-update
+yes | sudo dnf upgrade
+yes | sudo dnf install 	--refresh dnf-plugins-core
 
 #essential
 yes | sudo dnf check-update
 yes | sudo dnf upgrade
 yes | sudo dnf remove ibus
-yes | sudo dnf groupinstall "Development Tools"
-yes | sudo dnf install zsh python3-pip curl wget git nano vim python3 cmake alacritty \
+yes | sudo dnf groupinstall --refresh "Development Tools"
+yes | sudo dnf install 	--refresh zsh python3-pip curl wget git nano vim python3 cmake alacritty \
 fcitx5 fcitx5-mozc google-noto-cjk-fonts \
-ristretto feh picom vlc \
+ristretto feh picom vlc shutter evince \
 blueman 
 
 #apps 
-yes | sudo apt install htop rclone tlp w3m picom neofetch yt-dlp aria2 man httrack ffmpeg arandr \
+yes | sudo dnf check-update
+yes | sudo dnf upgrade
+yes | sudo dnf install --refresh htop rclone tlp w3m picom neofetch yt-dlp aria2 man httrack ffmpeg arandr \
 torbrowser-launcher proxychains-ng tor filezilla \
-inkscape krita gimp blender
+inkscape krita gimp blender ardour6
 
 #google-chrome 
-yes | sudo dnf install fedora-workstation-repositories
+yes | sudo dnf install --refresh fedora-workstation-repositories
 yes | sudo dnf config-manager --set-enabled google-chrome
-yes | sudo dnf install google-chrome-stable
+yes | sudo dnf check-update
+yes | sudo dnf upgrade
+yes | sudo dnf install	--refresh google-chrome-stable
 
 
 #vscode

@@ -12,5 +12,18 @@
     },
     "explorer.confirmDragAndDrop": false,
     "terminal.integrated.defaultProfile.linux": "zsh",
-    "python.defaultInterpreterPath": "python3"
+    "python.defaultInterpreterPath": "python3",
+    "[vue]": {
+        "editor.defaultFormatter": "octref.vetur"
+    },
+    "explorer.confirmDelete": false,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
