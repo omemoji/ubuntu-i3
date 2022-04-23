@@ -3,8 +3,8 @@ yes | sudo apt update
 yes | sudo apt upgrade
 
 #essential
-yes | sudo apt install xserver-xorg
-yes | sudo apt install --no-install-recommends xinit evince 
+yes | sudo apt install xserver-xorg 
+yes | sudo apt install --no-install-recommends xinit network-manager-gnome evince 
 yes | sudo apt install i3 i3status dmenu \
 xarchiver thunar gvfs autofs ranger gvfs-backends atool thunar-archive-plugin \
 zsh python3-pip build-essential curl wget git nano vim python3 \
@@ -17,7 +17,7 @@ feh vlc ristretto screengrab
 #apps
 yes | sudo apt install htop rclone tlp w3m w3m-img picom neofetch aria2 man httrack ffmpeg arandr \
 torbrowser-launcher proxychains tor filezilla \
-ardour blender /
+ardour blender \
 libarchive-tools xorriso p7zip-full gzip whois \
 qemu-system libvirt-clients libvirt-daemon-system timeshift
 
