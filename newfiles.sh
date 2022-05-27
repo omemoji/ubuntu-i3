@@ -4,7 +4,7 @@ mkdir ~/Pictures
 mkdir ~/Pictures/Artworks
 mkdir ~/Pictures/wallpaper 
 mkdir ~/Pictures/screenshot
-wget https://www.omemoji.dev/assets/wallpaper/wallpaper01.png -O /home/omemoji/Pictures/wallpaper/wallpaper01.png
+wget https://raw.githubusercontent.com/Omemoji/Images/main/wallpaper01.png -O /home/omemoji/Pictures/wallpaper/wallpaper01.png
 mkdir ~/Creativity
 mkdir ~/Downloads
 mkdir ~/Documents
