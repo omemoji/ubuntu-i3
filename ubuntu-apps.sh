@@ -48,9 +48,9 @@ yes | sudo apt update
 yes | sudo apt install ~/Downloads/deb/teams.deb
 
 #Gimp
-yes | sudo add-apt-repository ppa:ubuntuhandbook1/gimp
-yes | sudo apt update
-yes | sudo apt install gimp gimp-gmic
+#yes | sudo add-apt-repository ppa:ubuntuhandbook1/gimp
+#yes | sudo apt update
+#yes | sudo apt install gimp gimp-gmic
 
 #Inkscape 
 yes | sudo add-apt-repository ppa:inkscape.dev/stable
@@ -58,9 +58,9 @@ yes | sudo apt update
 yes | sudo apt install inkscape
 
 #Krita
-yes | sudo add-apt-repository ppa:kritalime/ppa
-yes | sudo apt update
-yes | sudo apt install krita
+#yes | sudo add-apt-repository ppa:kritalime/ppa
+#yes | sudo apt update
+#yes | sudo apt install krita
 
 #yt-dlp
 sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
