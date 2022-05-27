@@ -7,6 +7,7 @@ mkdir ~/Pictures/screenshot
 wget https://raw.githubusercontent.com/Omemoji/Images/main/wallpaper01.png -O /home/omemoji/Pictures/wallpaper/wallpaper01.png
 mkdir ~/Creativity
 mkdir ~/Downloads
+mkdir ~/Downloads/deb
 mkdir ~/Documents
 mkdir ~/googledrive
 mkdir ~/programming
