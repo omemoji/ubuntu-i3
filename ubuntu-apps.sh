@@ -11,13 +11,12 @@ zsh python3-pip build-essential curl wget git nano vim python3 \
 fcitx5 fcitx5-mozc fonts-noto font-manager \
 network-manager blueman openssh-server \
 software-properties-common apt-transport-https ppa-purge \
-pulseaudio pavucontrol alsa-utils \
-feh vlc ristretto screengrab 
+feh vlc ristretto screengrab light
 
 #apps
 yes | sudo apt install htop rclone tlp w3m w3m-img picom neofetch aria2 man httrack ffmpeg arandr \
 torbrowser-launcher proxychains tor filezilla \
-ardour blender \
+ardour blender krita \
 libarchive-tools xorriso p7zip-full gzip whois \
 qemu-system libvirt-clients libvirt-daemon-system timeshift
 
@@ -56,12 +55,3 @@ yes | sudo apt install gimp
 yes | sudo add-apt-repository ppa:inkscape.dev/stable
 yes | sudo apt update
 yes | sudo apt install inkscape
-
-#Krita
-#yes | sudo add-apt-repository ppa:kritalime/ppa
-#yes | sudo apt update
-#yes | sudo apt install krita
-yes | sudo apt install krita
-
-yes | sudo apt update 
-yes | sudo apt upgrade

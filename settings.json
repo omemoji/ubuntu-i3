@@ -14,7 +14,7 @@
     "terminal.integrated.defaultProfile.linux": "zsh",
     "python.defaultInterpreterPath": "python3",
     "[vue]": {
-        "editor.defaultFormatter": "octref.vetur"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "explorer.confirmDelete": false,
     "[json]": {
@@ -25,5 +25,12 @@
     },
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "workbench.editorAssociations": {
+        "*.ISO": "hexEditor.hexedit",
+        "*.bin": "hexEditor.hexedit"
+    },
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "code-runner.runInTerminal": true,
+    "liveServer.settings.donotVerifyTags": true
 }

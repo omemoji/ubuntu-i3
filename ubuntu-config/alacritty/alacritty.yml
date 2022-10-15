@@ -70,13 +70,14 @@ font:
     style: Italic
 
   # Point size
-  size: 15
+  size: 10
+
 
 #shell:
 #  program: /usr/bin/zsh
 #  args: 
-#    - -l
-#    - -c
+#   - -l
+#   - -c
 #   - "tmux attach || tmux"
 #env:
 #  TERM: alacritty

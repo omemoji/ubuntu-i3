@@ -29,6 +29,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
+exec --no-startup-id sh ~/.screenlayout/standard.sh
 #exec --no-startup-id xrandr --output DisplayPort-0 --mode 1920x1080 --rate 120.00
 
 #exec --no-startup-id "WINIT_X11_SCALE_FACTOR=1.66 alacritty"
@@ -54,7 +55,7 @@ floating_modifier $mod
 #bindsym $mod+Return exec kitty
 #bindsym Return+a+t exec kitty
 #bindsym $mod+Return exec wezterm
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec WINIT_UNIX_BACKEND=x11 WINIT_X11_SCALE_FACTOR=1.66 LANG=ja_JP.UTF-8 alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -65,8 +66,11 @@ bindsym $mod+Shift+q kill
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-bindsym Print exec --no-startup-id flameshot gui
+bindsym $mod+d exec --no-startup-id LANG=C i3-dmenu-desktop
+bindsym Print exec --no-startup-id screengrab
+
+# auto lock the screen
+exec "xautolock -detectsleep -time 3 -locker \"i3lock -c 000000\""
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
@@ -188,8 +192,26 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+#remove window title
+
+default_border pixel 2
+default_floating_border pixel 2
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
+
 bar {
-        status_command i3status
+    status_command    i3status
+    position top
+    workspace_buttons yes 
+    tray_output primary
+    
+    colors {
+        background #000000
+        statusline #ffffff
+
+        focused_workspace  #ffffff #888888
+        active_workspace   #ffffff #333333
+        inactive_workspace #888888 #222222
+        urgent_workspace   #ffffff #900000
+    }
 }
