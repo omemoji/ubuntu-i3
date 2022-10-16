@@ -4,7 +4,8 @@ mkdir ~/Pictures
 mkdir ~/Pictures/Artworks
 mkdir ~/Pictures/wallpaper 
 mkdir ~/Pictures/screenshot
-cp ~/dotfiles/wallpaper/wallpaper01.png /home/omemoji/Pictures/wallpaper/wallpaper01.png
+cp ~/dotfiles/wallpaper/wallpaper01.png ~/Pictures/wallpaper/wallpaper01.png
+cp ~/dotfiles/wallpaper/wallpaper02.png ~/Pictures/wallpaper/wallpaper02.png
 mkdir ~/Creativity
 mkdir ~/Downloads
 mkdir ~/Downloads/deb
