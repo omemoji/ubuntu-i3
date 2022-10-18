@@ -14,6 +14,3 @@ bakeiso(){
 yt-aria(){
     yt-dlp --external-downloader aria2c $1
 }
-# fltk-compile(){
-#     fltk-config --compile $1
-# }

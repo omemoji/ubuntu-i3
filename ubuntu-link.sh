@@ -1,7 +1,7 @@
 #!/usr/bin/zsh
 rm -r ~/.config/i3 
+rm -r ~/.config/i3status 
 rm -r ~/.config/alacritty
-rm -r ~/.config/neofetch
 rm -r ~/.config/screengrab
 rm ~/.zshrc
 #dotfiles
