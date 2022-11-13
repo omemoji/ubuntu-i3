@@ -26,6 +26,11 @@ yes | echo "deb [arch=amd64 signed-by=/usr/share/keyrings/ms-vscode-keyring.gpg]
 yes | sudo apt update
 yes | sudo apt install code
 
+#Alacritty
+yes | sudo add-apt-repository ppa:aslatter/ppa
+yes | sudo apt update
+yes | sudo apt install alacritty
+
 #Coogle Earth
 wget http://dl.google.com/dl/earth/client/current/google-earth-stable_current_amd64.deb -O ~/Downloads/deb/google-earth.deb
 yes | sudo apt update
