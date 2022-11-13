@@ -10,7 +10,8 @@ export LANG=C
 export HISTFILE=~/.zsh_history
 export HISTSIZE=1000
 export SAVEHIST=10000
-export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME/go
+export GOBIN=$GOPATH/bin
 PROMPT='%m:%F{green}%d%f$ '
 ##  直前の重複を記録しない
 setopt hist_ignore_dups

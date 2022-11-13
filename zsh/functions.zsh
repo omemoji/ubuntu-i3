@@ -3,7 +3,7 @@ makeqemu() {
 qemu-img create -f qcow2 $1 20G
 }
 startwacom(){
-xsetwacom --set $1 MapToOutput "DisplayPort-0"
+xsetwacom --set $1 MapToOutput $2
 }
 formatiso(){
     sudo mkfs -t $1 -Q -L usbdisk $2

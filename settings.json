@@ -28,9 +28,13 @@
     },
     "workbench.editorAssociations": {
         "*.ISO": "hexEditor.hexedit",
-        "*.bin": "hexEditor.hexedit"
+        "*.bin": "hexEditor.hexedit",
+        "*.obj": "3dviewer.viewer"
     },
     "terminal.integrated.enableMultiLinePasteWarning": false,
     "code-runner.runInTerminal": true,
-    "liveServer.settings.donotVerifyTags": true
+    "liveServer.settings.donotVerifyTags": true,
+    "settingsSync.keybindingsPerPlatform": false,
+    "settingsSync.ignoredExtensions": [
+    ]
 }
