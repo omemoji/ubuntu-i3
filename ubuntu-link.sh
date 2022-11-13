@@ -21,7 +21,7 @@ for f in .??*; do
     ln -snfv ~/dotfiles/"$f" ~/
 done
 #config
-cd config 
+cd ubuntu-config 
 for i in *; do
     ln -snfv ~/dotfiles/ubuntu-config/"$i" ~/.config/
 done

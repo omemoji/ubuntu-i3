@@ -12,7 +12,7 @@ for f in .??*; do
 done
 
 #config
-cd config 
+cd pop-config
 for i in *; do
     ln -snfv ~/dotfiles/pop-config/"$i" ~/.config/
 done
