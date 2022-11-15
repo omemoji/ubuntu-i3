@@ -3,6 +3,7 @@ rm -r ~/.config/i3
 rm -r ~/.config/i3status 
 rm -r ~/.config/alacritty
 rm -r ~/.config/screengrab
+rm -r ~/.config/neofetch
 rm ~/.zshrc
 rm ~/.vimrc
 #dotfiles

@@ -17,6 +17,11 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -
 yes | sudo apt update
 yes | sudo apt install ~/Downloads/deb/google-chrome.deb
 
+#Firefox
+yes | sudo add-apt-repository ppa:mozillateam/ppa
+yes | sudo apt update
+yes | sudo apt install firefox-esr
+
 #VSCode
 yes | curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor -o /usr/share/keyrings/ms-vscode-keyring.gpg
 yes | echo "deb [arch=amd64 signed-by=/usr/share/keyrings/ms-vscode-keyring.gpg] https://packages.microsoft.com/repos/vscode stable main" | sudo tee /etc/apt/sources.list.d/vscode.list
