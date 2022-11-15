@@ -5,6 +5,7 @@ rm -r ~/.config/alacritty
 rm -r ~/.config/screengrab
 rm -r ~/.config/neofetch
 rm ~/.zshrc
+rm ~/.zprofile
 rm ~/.vimrc
 #dotfiles
 set -u

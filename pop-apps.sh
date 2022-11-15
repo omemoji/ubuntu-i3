@@ -6,7 +6,7 @@ yes | sudo apt upgrade
 yes | sudo apt install zsh vim htop man rclone tlp powertop
 
 #development
-yes | sudo apt install build-essential openjdk-19-jdk python3-pip cmake
+yes | sudo apt install build-essential openjdk-19-jdk python3 python3-pip cmake
 
 #language 
 yes | sudo apt install fcitx5 fcitx5-mozc
