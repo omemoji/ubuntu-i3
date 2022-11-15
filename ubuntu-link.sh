@@ -4,20 +4,12 @@ rm -r ~/.config/i3status
 rm -r ~/.config/alacritty
 rm -r ~/.config/screengrab
 rm ~/.zshrc
+rm ~/.vimrc
 #dotfiles
 set -u
 
 for f in .??*; do
     [ "$f" = ".git" ] && continue
-    [ "$f" = ".gitconfig.local.template" ] && continue
-    [ "$f" = ".Xauthority" ] && continue
-    [ "$f" = ".gitmodules" ] && continue
-    [ "$f" = ".zsh_history" ] && continue
-    [ "$f" = ".fehbg" ] && continue
-    [ "$f" = ".bashrc" ] && continue
-    [ "$f" = ".bash_history" ] && continue
-    [ "$f" = ".bashrc" ] && continue
-    [ "$f" = ".wget-hsts" ] && continue
     ln -snfv ~/dotfiles/"$f" ~/
 done
 #config

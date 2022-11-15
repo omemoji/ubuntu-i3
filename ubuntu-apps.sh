@@ -2,12 +2,15 @@
 yes | sudo apt update
 yes | sudo apt upgrade
 
-#apps
-yes | sudo apt install htop rclone tlp powertop picom neofetch aria2 man ffmpeg arandr \
-torbrowser-launcher proxychains tor filezilla \
-ardour blender krita \
-libarchive-tools xorriso p7zip-full gzip whois \
-qemu-system libvirt-clients libvirt-daemon-system timeshift
+#window manager
+yes | sudo apt install --no-install-recommends xinit network-manager-gnome
+yes | sudo apt install xserver-xorg i3 i3status dmenu light picom arandr
+#file manager
+yes | sudo apt install xarchiver thunar gvfs autofs gvfs-backends thunar-archive-plugin
+#font 
+yes | sudo apt install fcitx5 fcitx5-mozc fonts-noto-cjk fonts-noto-cjk-extra 
+#media
+yes | sudo apt install --no-install-recommends feh vlc ristretto screengrab evince
 
 #Google Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O ~/Downloads/deb/google-chrome.deb
@@ -20,12 +23,12 @@ yes | echo "deb [arch=amd64 signed-by=/usr/share/keyrings/ms-vscode-keyring.gpg]
 yes | sudo apt update
 yes | sudo apt install code
 
-#google-earth
-wget http://dl.google.com/dl/earth/client/current/google-earth-stable_current_amd64.deb -O ~/Downloads/deb/google-earth.deb
+#Alacritty
+yes | sudo add-apt-repository ppa:aslatter/ppa
 yes | sudo apt update
-yes | sudo apt install ~/Downloads/deb/google-earth.deb
+yes | sudo apt install alacritty
 
-#teams
-wget https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.4.00.4855_amd64.deb -O ~/Downloads/deb/teams.deb
+#Inkscape 
+yes | sudo add-apt-repository ppa:inkscape.dev/stable
 yes | sudo apt update
-yes | sudo apt install ~/Downloads/deb/teams.deb
+yes | sudo apt install inkscape

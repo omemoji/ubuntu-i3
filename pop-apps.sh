@@ -2,8 +2,11 @@
 yes | sudo apt update
 yes | sudo apt upgrade
 
+#commands
+yes | sudo apt install zsh vim htop man rclone tlp powertop
+
 #development
-yes | sudo apt install zsh vim openjdk-19-jdk
+yes | sudo apt install build-essential openjdk-19-jdk cmake
 
 #language 
 yes | sudo apt install fcitx5 fcitx5-mozc
@@ -11,8 +14,10 @@ yes | sudo apt install fcitx5 fcitx5-mozc
 #virtual machine
 yes | sudo apt install qemu-system libvirt-clients libvirt-daemon-system
 
-#other apps
-yes | sudo apt install vlc htop rclone tlp powertop picom aria2 man ffmpeg arandr 
+#media
+yes | sudo apt install vlc 
+
+#apps
 yes | sudo apt install neofetch --no-install-recommends
 
 #Google Chrome
@@ -50,3 +55,8 @@ yes | sudo apt install inkscape
 yes | sudo add-apt-repository ppa:obsproject/obs-studio
 yes | sudo apt update
 yes | sudo apt install obs-studio
+
+#yt-dlp
+yes | sudo apt install aria2 ffmpeg
+yes | sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
+sudo chmod a+rx /usr/local/bin/yt-dlp
