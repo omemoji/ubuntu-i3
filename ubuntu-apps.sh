@@ -8,7 +8,7 @@ yes | sudo apt install xserver-xorg i3 i3status dmenu light picom arandr
 #file manager
 yes | sudo apt install xarchiver thunar gvfs autofs gvfs-backends thunar-archive-plugin
 #font 
-yes | sudo apt install fcitx5 fcitx5-mozc fonts-noto-cjk fonts-noto-cjk-extra 
+yes | sudo apt install fcitx5 fcitx5-mozc fonts-ubuntu fonts-noto-cjk fonts-noto-cjk-extra 
 #media
 yes | sudo apt install --no-install-recommends feh vlc ristretto screengrab evince
 
