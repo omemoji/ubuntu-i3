@@ -1,6 +1,6 @@
 # function
 makeqemu() {
-qemu-img create -f qcow2 $1 20G
+qemu-img create -f qcow2 $1 "$2"G
 }
 startwacom(){
 xsetwacom --set $1 MapToOutput $2
