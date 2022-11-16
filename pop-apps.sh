@@ -3,7 +3,7 @@ yes | sudo apt update
 yes | sudo apt upgrade
 
 #commands
-yes | sudo apt install zsh vim htop man rclone tlp powertop sqlite3 w3m libsixel-bin
+yes | sudo apt install zsh vim htop man rclone tlp powertop sqlite3 w3m w3m-img
 
 #development
 yes | sudo apt install build-essential openjdk-19-jdk python3 python3-pip cmake
@@ -15,7 +15,7 @@ yes | sudo apt install fcitx5 fcitx5-mozc
 yes | sudo apt install qemu-system libvirt-clients libvirt-daemon-system
 
 #media
-yes | sudo apt install vlc 
+yes | sudo apt install vlc gimp gimp-gmic
 
 #apps
 yes | sudo apt install neofetch --no-install-recommends
@@ -60,3 +60,7 @@ yes | sudo apt install obs-studio
 yes | sudo apt install aria2 ffmpeg
 yes | sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
 sudo chmod a+rx /usr/local/bin/yt-dlp
+
+#ranger
+yes | sudo apt install python3 python3-dev libx11-dev libxext-dev python3-distutil ffmpegthumbnailer atool libsixel-bin
+yes | sudo pip3 install ueberzug 

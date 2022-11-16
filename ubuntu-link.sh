@@ -1,9 +1,13 @@
 #!/usr/bin/zsh
+rm -r ~/.config/alacritty
+rm -r ~/.config/neofetch
+rm -r ~/.config/ranger
+rm -r ~/.config/wezterm
+#ubuntu-config
 rm -r ~/.config/i3 
 rm -r ~/.config/i3status 
-rm -r ~/.config/alacritty
 rm -r ~/.config/screengrab
-rm -r ~/.config/neofetch
+
 rm ~/.zshrc
 rm ~/.zprofile
 rm ~/.vimrc
@@ -14,7 +18,15 @@ for f in .??*; do
     [ "$f" = ".git" ] && continue
     ln -snfv ~/dotfiles/"$f" ~/
 done
+
 #config
+cd config
+for i in *; do
+    ln -snfv ~/dotfiles/config/"$i" ~/.config/
+done
+cd ..
+
+#ubuntu-config
 cd ubuntu-config 
 for i in *; do
     ln -snfv ~/dotfiles/ubuntu-config/"$i" ~/.config/

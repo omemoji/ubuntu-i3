@@ -1,8 +1,11 @@
 #!/bin/bash
+#config
 rm -r ~/.config/alacritty
 rm -r ~/.config/wezterm
 rm -r ~/.config/neofetch
 rm -r ~/.config/ranger
+#pop-config
+rm -r ~/.config/nvim
 rm ~/.zshrc
 rm ~/.vimrc
 #dotfiles
@@ -14,6 +17,13 @@ for f in .??*; do
 done
 
 #config
+cd config
+for i in *; do
+    ln -snfv ~/dotfiles/pop-config/"$i" ~/.config/
+done
+cd ..
+
+#pop-config
 cd pop-config
 for i in *; do
     ln -snfv ~/dotfiles/pop-config/"$i" ~/.config/

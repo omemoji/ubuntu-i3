@@ -10,7 +10,7 @@ yes | sudo apt install xarchiver thunar gvfs autofs gvfs-backends thunar-archive
 #font 
 yes | sudo apt install fcitx5 fcitx5-mozc fonts-ubuntu fonts-noto-cjk fonts-noto-cjk-extra 
 #media
-yes | sudo apt install --no-install-recommends feh vlc ristretto screengrab evince
+yes | sudo apt install --no-install-recommends feh vlc gimp gimp-gmic ristretto screengrab evince
 
 #Google Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O ~/Downloads/deb/google-chrome.deb
@@ -32,3 +32,7 @@ yes | sudo apt install code
 yes | sudo add-apt-repository ppa:aslatter/ppa
 yes | sudo apt update
 yes | sudo apt install alacritty
+
+#ranger
+yes | sudo apt install python3 python3-dev libx11-dev libxext-dev python3-distutil ffmpegthumbnailer atool
+yes | sudo pip3 install ueberzug 
