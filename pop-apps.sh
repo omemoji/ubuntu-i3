@@ -3,7 +3,7 @@ yes | sudo apt update
 yes | sudo apt upgrade
 
 #commands
-yes | sudo apt install zsh vim htop man rclone tlp powertop
+yes | sudo apt install zsh vim htop man rclone tlp powertop sqlite3 w3m libsixel-bin
 
 #development
 yes | sudo apt install build-essential openjdk-19-jdk python3 python3-pip cmake

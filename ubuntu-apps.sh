@@ -32,8 +32,3 @@ yes | sudo apt install code
 yes | sudo add-apt-repository ppa:aslatter/ppa
 yes | sudo apt update
 yes | sudo apt install alacritty
-
-#Inkscape 
-yes | sudo add-apt-repository ppa:inkscape.dev/stable
-yes | sudo apt update
-yes | sudo apt install inkscape

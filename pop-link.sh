@@ -1,6 +1,8 @@
 #!/bin/bash
 rm -r ~/.config/alacritty
+rm -r ~/.config/wezterm
 rm -r ~/.config/neofetch
+rm -r ~/.config/ranger
 rm ~/.zshrc
 rm ~/.vimrc
 #dotfiles

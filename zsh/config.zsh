@@ -1,5 +1,6 @@
 #export LANG=ja_JP.UTF-8
-export LANG=C
+#export LANG=en_US.UTF-8
+export LANG=C.utf-8
 # ----------
 #    補完
 # ----------
