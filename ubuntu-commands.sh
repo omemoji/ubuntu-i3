@@ -3,7 +3,7 @@ yes | sudo apt update
 yes | sudo apt upgrade
 
 #essential
-yes | sudo apt install --no-install-recommends zsh build-essential python3 python3-pip curl wget git vim tlp powertop htop rclone ranger w3m sqlite3
+yes | sudo apt install --no-install-recommends zsh build-essential python3 python3-pip curl wget git vim tlp powertop htop rclone ranger w3m w3m-img sqlite3
 #network
 yes | sudo apt install --no-install-recommends network-manager blueman openssh-server proxychains tor 
 #apt
