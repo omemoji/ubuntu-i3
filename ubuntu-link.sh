@@ -11,6 +11,8 @@ rm -r ~/.config/screengrab
 rm ~/.zshrc
 rm ~/.zprofile
 rm ~/.vimrc
+rm ~/.w3m
+
 #dotfiles
 set -u
 

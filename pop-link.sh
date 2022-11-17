@@ -8,6 +8,7 @@ rm -r ~/.config/ranger
 rm -r ~/.config/nvim
 rm ~/.zshrc
 rm ~/.vimrc
+rm ~/.w3m
 #dotfiles
 set -u
 for f in .??*; do
