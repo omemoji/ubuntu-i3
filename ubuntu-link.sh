@@ -23,15 +23,17 @@ done
 
 #config
 cd config
-for i in *; do
-    ln -snfv ~/dotfiles/config/"$i" ~/.config/
+for i in `ls *` 
+do
+    ln -snfv "$i" ~/.config/
 done
 cd ..
 
 #ubuntu-config
 cd ubuntu-config 
-for i in *; do
-    ln -snfv ~/dotfiles/ubuntu-config/"$i" ~/.config/
+for i in `ls *` 
+do
+    ln -snfv "$i" ~/.config/
 done
 cd ..
 #vscode 

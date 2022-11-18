@@ -37,5 +37,8 @@
     "liveServer.settings.donotVerifyTags": true,
     "settingsSync.keybindingsPerPlatform": false,
     "settingsSync.ignoredExtensions": [
-    ]
+    ],
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }

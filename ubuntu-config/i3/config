@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 8
+font pango:monospace 9
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -24,7 +24,12 @@ font pango:monospace 8
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+
+#bindsym $mod+Control+l exec i3lock
+#exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+# auto lock the screen
+# exec "xautolock -detectsleep -time 1 -locker \"i3lock -c #000000\""
+exec "xautolock -detectsleep -time 1 -locker \"i3lock -t -i ~/Pictures/wallpaper/lock01.png\""
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -35,7 +40,9 @@ exec --no-startup-id sh ~/.screenlayout/standard.sh
 #exec --no-startup-id "WINIT_X11_SCALE_FACTOR=1.66 alacritty"
 exec --no-startup-id picom
 exec --no-startup-id fcitx5
-exec --no-startup-id "feh --bg-scale ~/Pictures/wallpaper/wallpaper02.png"
+# exec --no-startup-id "feh --bg-fill ~/Pictures/wallpaper/wallpaper01.png"
+# exec --no-startup-id "feh --bg-fill ~/Pictures/wallpaper/wallpaper03.png"
+exec --no-startup-id "feh --bg-fill ~/Pictures/wallpaper/wallpaper01.png"
 #exec --no-startup-id ~/.screenlayout/standard.sh
 exec --no-startup-id xsetwacom --set 10 MapToOutput "HDMI-A-0"
 #exec --no-startup-id xsetwacom --set 10 MapToOutput "HDMI-A-0"
@@ -43,8 +50,8 @@ exec --no-startup-id xsetwacom --set 10 MapToOutput "HDMI-A-0"
 #exec --no-startup-id "feh --bg-scale ~/Pictures/wallpaper/wallpaper03.jpg"
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
@@ -55,7 +62,7 @@ floating_modifier $mod
 #bindsym $mod+Return exec kitty
 #bindsym Return+a+t exec kitty
 #bindsym $mod+Return exec wezterm
-bindsym $mod+Return exec WINIT_UNIX_BACKEND=x11 WINIT_X11_SCALE_FACTOR=1.66 LANG=ja_JP.UTF-8 alacritty
+bindsym $mod+Return exec WINIT_X11_SCALE_FACTOR=1.66 alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -66,11 +73,9 @@ bindsym $mod+Shift+q kill
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
-bindsym $mod+d exec --no-startup-id LANG=C i3-dmenu-desktop
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 bindsym Print exec --no-startup-id screengrab
 
-# auto lock the screen
-exec "xautolock -detectsleep -time 3 -locker \"i3lock -c 000000\""
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
@@ -193,7 +198,6 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 #remove window title
-
 default_border pixel 2
 default_floating_border pixel 2
 # Start i3bar to display a workspace bar (plus the system information i3status

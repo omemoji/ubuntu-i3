@@ -2,37 +2,53 @@
 yes | sudo apt update
 yes | sudo apt upgrade
 
-#window manager
-yes | sudo apt install --no-install-recommends xinit network-manager-gnome
-yes | sudo apt install xserver-xorg i3 i3status dmenu light picom arandr
-#file manager
-yes | sudo apt install xarchiver thunar gvfs autofs gvfs-backends thunar-archive-plugin
-#font 
-yes | sudo apt install fcitx5 fcitx5-mozc fonts-ubuntu fonts-noto-cjk fonts-noto-cjk-extra 
-#media
-yes | sudo apt install --no-install-recommends feh vlc gimp gimp-gmic ristretto screengrab evince
+yes | sudo apt install filezilla
 
-#Google Chrome
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O ~/Downloads/deb/google-chrome.deb
+#Coogle Earth
+wget http://dl.google.com/dl/earth/client/current/google-earth-stable_current_amd64.deb -O ~/Downloads/deb/google-earth.deb
 yes | sudo apt update
-yes | sudo apt install ~/Downloads/deb/google-chrome.deb
+yes | sudo apt install ~/Downloads/deb/google-earth.deb
 
-#Firefox
-yes | sudo add-apt-repository ppa:mozillateam/ppa
+#Inkscape 
+yes | sudo add-apt-repository ppa:inkscape.dev/stable
 yes | sudo apt update
-yes | sudo apt install firefox-esr
+yes | sudo apt install inkscape
 
-#VSCode
-yes | curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor -o /usr/share/keyrings/ms-vscode-keyring.gpg
-yes | echo "deb [arch=amd64 signed-by=/usr/share/keyrings/ms-vscode-keyring.gpg] https://packages.microsoft.com/repos/vscode stable main" | sudo tee /etc/apt/sources.list.d/vscode.list
+#Neovim
+yes | sudo add-apt-repository ppa:neovim-ppa/stable
 yes | sudo apt update
-yes | sudo apt install code
+yes | sudo apt install nvim
 
-#Alacritty
-yes | sudo add-apt-repository ppa:aslatter/ppa
+#Go
+yes | sudo add-apt-repository ppa:longsleep/golang-backports
 yes | sudo apt update
-yes | sudo apt install alacritty
+yes | sudo apt install golang-go
 
-#ranger
-yes | sudo apt install python3 python3-dev libx11-dev libxext-dev python3-distutil ffmpegthumbnailer atool
-yes | sudo pip3 install ueberzug 
+#OBS Studio
+yes | sudo add-apt-repository ppa:obsproject/obs-studio
+yes | sudo apt update
+yes | sudo apt install obs-studio
+
+#yt-dlp
+yes | sudo apt install aria2 ffmpeg
+yes | sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
+sudo chmod a+rx /usr/local/bin/yt-dlp
+
+#Flatpak
+yes | sudo apt install flatpak
+yes | flatpak update
+
+#Creativity
+yes | flatpak install flathub org.blender.Blender
+yes | flatpak install flathub org.ardour.Ardour
+yes | flatpak install flathub org.kde.krita
+
+#Social
+yes | flatpak install flathub com.slack.Slack
+yes | flatpak install flathub com.discordapp.Discord
+
+#Game 
+yes | flatpak install flathub com.valvesoftware.Steam
+yes | flatpak install flathub org.ppsspp.PPSSPP
+yes | flatpak install flathub org.citra_emu.citra
+
