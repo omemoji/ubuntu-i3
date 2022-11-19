@@ -27,7 +27,7 @@ URxvt.letterSpace:          0
 !! !URxvt.lineSpace:            0
 !! Color Scheme and Opacity - gruvbox-dark https://github.com/morhetz/gruvbox
 URxvt.depth: 32
-URxvt.background:           rgba:2000/2000/2000/aaaa
+URxvt.background:           rgba:2000/2000/2000/c000
 
 URxvt.color0:               [90]#282828
 URxvt.color1:               [90]#cc241d
@@ -64,7 +64,7 @@ URxvt.color15:              [90]#ebdbb2
 !! URxvt.color14:              [90]#A1EFE4
 !! URxvt.color15:              [90]#F9F8F5
 
-URxvt.foreground:           [90]#eeeeee
+URxvt.foreground:           [100]#eeeeee
 URxvt.colorIT:              [90]#8ec07c
 URxvt.colorBD:              [90]#d5c4a1
 URxvt.colorUL:              [90]#83a598

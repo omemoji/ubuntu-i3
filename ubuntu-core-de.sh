@@ -18,7 +18,6 @@ yes | sudo apt install gimp gimp-gmic filezilla thunderbird
 
 #ranger image preview
 yes | sudo apt install libx11-dev libxext-dev ffmpegthumbnailer atool
-yes | sudo pip3 install ueberzug
 
 #Google Chrome(browser)
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O ~/Downloads/deb/google-chrome.deb
