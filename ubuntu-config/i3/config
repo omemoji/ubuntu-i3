@@ -28,8 +28,8 @@ font pango:monospace 9
 #bindsym $mod+Control+l exec i3lock
 #exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # auto lock the screen
-# exec "xautolock -detectsleep -time 1 -locker \"i3lock -c #000000\""
-exec "xautolock -detectsleep -time 1 -locker \"i3lock -t -i ~/Pictures/wallpaper/lock01.png\""
+# exec "xautolock -detectsleep -time 3 -locker \"i3lock -c #000000\""
+exec "xautolock -detectsleep -time 3 -locker \"i3lock -t -i ~/Pictures/wallpaper/lock01.png\""
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
