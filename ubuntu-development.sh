@@ -6,6 +6,9 @@ yes | sudo apt upgrade
 #commands 
 yes | sudo apt install sqlite3
 
+#virtual machine
+yes | sudo apt install qemu-system libvirt-clients libvirt-daemon-system
+
 #Neovim
 yes | sudo add-apt-repository ppa:neovim-ppa/stable
 yes | sudo apt update

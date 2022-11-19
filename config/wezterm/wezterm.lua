@@ -13,7 +13,7 @@ return {
         }
     },
     window_background_opacity = 0.7,
-    font = wezterm.font({family="MesloLGS NF", weight="Regular"},{family="Osaka-Mono", weight="Regular"}),
+    font = wezterm.font({family="Osaka-Mono", weight="Regular"},{family="Menlo", weight="Regular"}),
     font_size = 19.0,
     colors = {
         -- The default text color
