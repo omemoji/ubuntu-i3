@@ -4,7 +4,7 @@ yes | sudo apt upgrade
 
 #---Commands---
 #essential
-yes | sudo apt install --no-install-recommends zsh build-essential python3 python3-pip curl wget git vim tlp powertop htop rclone sqlite3
+yes | sudo apt install --no-install-recommends zsh build-essential python3 python3-pip python3-dev ranger curl wget git vim tlp powertop htop rclone sqlite3
 
 #network
 yes | sudo apt install --no-install-recommends network-manager openssh-server proxychains openssl ca-certificates tor
@@ -19,7 +19,8 @@ yes | sudo apt install --no-install-recommends software-properties-common apt-tr
 yes | sudo apt install --no-install-recommends neofetch 
 
 #ranger
-yes | sudo apt install ranger python3 python3-dev libx11-dev libxext-dev python3-distutil ffmpegthumbnailer atool
+yes | sudo apt install libx11-dev libxext-dev ffmpegthumbnailer atool
+
 yes | sudo pip3 install ueberzug 
 
 #w3m
