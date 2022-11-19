@@ -35,9 +35,6 @@
     "terminal.integrated.enableMultiLinePasteWarning": false,
     "code-runner.runInTerminal": true,
     "liveServer.settings.donotVerifyTags": true,
-    "settingsSync.keybindingsPerPlatform": false,
-    "settingsSync.ignoredExtensions": [
-    ],
     "[scss]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     }

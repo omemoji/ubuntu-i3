@@ -20,10 +20,12 @@ yes | sudo apt install --no-install-recommends neofetch
 
 #ranger
 yes | sudo apt install libx11-dev libxext-dev ffmpegthumbnailer atool
-
-yes | sudo pip3 install ueberzug 
+yes | sudo pip3 install ueberzug
 
 #w3m
 yes | sudo apt install w3m libsixel-bin w3m-img- 
+
+#kernel
+yes | sudo apt install --install-recommends linux-generic-hwe-22.04
 
 yes | sudo apt purge needrestart
