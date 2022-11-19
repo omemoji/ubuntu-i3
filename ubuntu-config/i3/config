@@ -62,7 +62,8 @@ floating_modifier $mod
 #bindsym $mod+Return exec kitty
 #bindsym Return+a+t exec kitty
 #bindsym $mod+Return exec wezterm
-bindsym $mod+Return exec WINIT_X11_SCALE_FACTOR=1.66 alacritty
+bindsym $mod+Return exec rxvt
+#bindsym $mod+Return exec WINIT_X11_SCALE_FACTOR=1.66 alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill

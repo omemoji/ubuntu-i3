@@ -1,27 +1,19 @@
 #!/bin/bash
-#Neovim
-yes | sudo add-apt-repository ppa:neovim-ppa/stable
+#Alacritty
+yes | sudo add-apt-repository ppa:aslatter/ppa
 yes | sudo apt update
-yes | sudo apt install nvim
+yes | sudo apt install alacritty
 
-#Go
-yes | sudo add-apt-repository ppa:longsleep/golang-backports
+#VSCode
+yes | curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor -o /usr/share/keyrings/ms-vscode-keyring.gpg
+yes | echo "deb [arch=amd64 signed-by=/usr/share/keyrings/ms-vscode-keyring.gpg] https://packages.microsoft.com/repos/vscode stable main" | sudo tee /etc/apt/sources.list.d/vscode.list
 yes | sudo apt update
-yes | sudo apt install golang-go
+yes | sudo apt install code
 
-#Java
-yes | sudo apt install openjdk-19-jdk
-
-#Nodejs
-yes | sudo apt install nodejs npm
-yes | sudo npm install n -g
-yes | sudo n lts
-yes | sudo apt purge nodejs npm
-
-#yt-dlp
-yes | sudo apt install aria2 ffmpeg
-yes | sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
-sudo chmod a+rx /usr/local/bin/yt-dlp
+#Inkscape 
+yes | sudo add-apt-repository ppa:inkscape.dev/stable
+yes | sudo apt update
+yes | sudo apt install inkscape
 
 #Coogle Earth
 wget http://dl.google.com/dl/earth/client/current/google-earth-stable_current_amd64.deb -O ~/Downloads/deb/google-earth.deb
