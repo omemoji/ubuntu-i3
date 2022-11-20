@@ -33,7 +33,7 @@ Ubuntu-i3 doesn't have a display manager and a desktop environment starts with `
 | Input method(Japanese) | Fcitx5 and Mozc    |
 | Sound                  | PipeWire           |
 | Terminal               | rxvt-unicode       |
-| Browser                | Google chrome      |
+| Browser                | Google hrome      |
 | Mailer                 | Thunderbird        |
 | Editor                 | Visual Studio Code |
 | File manager           | Thunar             |
