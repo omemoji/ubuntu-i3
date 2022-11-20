@@ -32,7 +32,7 @@ Ubuntu-i3 doesn't have a display manager and a desktop environment starts with `
 | Launcher               | i3-dmenu-desktop   |
 | Input method(Japanese) | Fcitx5 and Mozc    |
 | Sound                  | PipeWire           |
-| Terminal               | rxvi-unicode       |
+| Terminal               | rxvt-unicode       |
 | Browser                | Google chrome      |
 | Mailer                 | Thunderbird        |
 | Editor                 | Visual Studio Code |
