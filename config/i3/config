@@ -222,6 +222,6 @@ bindsym $mod+g exec google-chrome
 bindsym Print exec --no-startup-id screengrab
 
 #remove window title
-default_border pixel 2
-default_floating_border pixel 2
+#default_border pixel 2
+#default_floating_border pixel 2
 #######################################################################
