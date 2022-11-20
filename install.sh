@@ -1,8 +1,4 @@
 #!/bin/bash
-echo "---change caps to ctrl---"
-sudo cp keyboard /etc/default/keyboard
-sudo systemctl restart console-setup
-
 #---Files---
 echo "---create folders---"
 mkdir ~/Downloads
@@ -13,8 +9,6 @@ mkdir ~/Pictures/wallpaper
 for i in wallpaper/*; do
     cp "$i" ~/Pictures/"$i"
 done
-mkdir ~/Workspace
-mkdir ~/.fonts
 
 echo "---install apps---"
 yes | sudo apt update
@@ -58,21 +52,6 @@ yes | echo "deb [arch=amd64 signed-by=/usr/share/keyrings/ms-vscode-keyring.gpg]
 yes | sudo apt update
 yes | sudo apt install code
 
-#---create dotfiles link---
-echo "---create dotfile links---"
-set -u
-for dotfile in .??*; do
-    [ "$dotfile" = ".git" ] && continue
-    rm -r "$HOME/$dotfile"
-    ln -snfv "$(pwd)/$dotfile" "$HOME/$dotfile"
-done
-cd config
-for conf in ??*; do
-    rm -r "$HOME/.config/$conf"
-    ln -snfv "$(pwd)/$conf" "$HOME/.config/$conf"
-done
-cd ..
-
 #---Sound(Pipewire)---
 echo "---set sound---"
 yes | sudo apt install pipewire \
@@ -85,6 +64,21 @@ yes | sudo apt install wireplumber pipewire-media-session-
 systemctl --user --now enable wireplumber.service
 yes | sudo apt install --no-install-recommends pavucontrol
 
-echo "---change default terminal to zsh---"
-chsh -s /usr/bin/zsh
-zsh
+echo "---change caps to ctrl---"
+sudo cp keyboard /etc/default/keyboard
+sudo systemctl restart console-setup
+
+for dotfile in .??*; do
+    [ "$dotfile" = ".git" ] && continue
+    rm -r "$HOME/$dotfile"
+    cp -rf "$(pwd)/$dotfile" "$HOME/$dotfile"
+done
+
+cd config
+for conf in ??*; do
+    rm -r "$HOME/.config/$conf"
+    cp -rf "$(pwd)/$conf" "$HOME/.config/$conf"
+done
+cd ..
+
+echo "---Installation completed---"

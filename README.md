@@ -12,10 +12,9 @@ The script `install.sh` builds a i3-wm-based desktop environment on Ubuntu Serve
 
 https://ubuntu.com/download/server
 
-### 2: Do git clone and Run `install.sh`
+### 2: Run `install.sh`
 
 ```
-cd
 git clone https://github.com/omemoji/ubuntu-i3.git
 cd ubuntu-i3
 sh install.sh
@@ -49,14 +48,6 @@ Ubuntu-i3 doesn't have a display manager and a desktop environment starts with `
 | Browser      | w3m              |
 | Editor       | Vim, Neovim      |
 | File Manager | Ranger           |
-
-### dotfiles
-```
-.Xresources: config file of rxvt-unicode
-.xinitrc: load .Xresources
-.zshrc: load zsh folder
-.w3m: manage w3m's bookmark
-```
 
 And if you like, (for example) you can install apps below manually.
 
