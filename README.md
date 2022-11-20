@@ -16,9 +16,9 @@ https://ubuntu.com/download/server
 
 ```
 cd
-git clone https://github.com/omemoji/dotfiles.git
-cd dotfiles
-sh ubuntu-setup.sh
+git clone https://github.com/omemoji/ubuntu-i3.git
+cd ubuntu-i3
+sh install.sh
 ```
 ### 3: Done!🎉
 Ubuntu-i3 doesn't have a display manager and a desktop environment starts with `startx` (it automatically starts by .zprofile.)
