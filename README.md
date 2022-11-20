@@ -12,7 +12,7 @@ The script `install.sh` builds a i3-wm-based desktop environment on Ubuntu Serve
 
 https://ubuntu.com/download/server
 
-### 2: Do git clone  and Run `ubuntu-setup.sh`
+### 2: Do git clone and Run `install.sh`
 
 ```
 cd
