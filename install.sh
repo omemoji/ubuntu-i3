@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "---change caps to ctrl---"
-sudo cp setting/keyboard /etc/default/keyboard
+sudo cp keyboard /etc/default/keyboard
 sudo systemctl restart console-setup
 
 #---Files---
@@ -39,7 +39,7 @@ echo "---install GUI apps---"
 ##Desktop Environment
 yes | sudo apt install --no-install-recommends xinit network-manager-gnome light picom arandr blueman \
 feh vlc ristretto screengrab evince
-yes | sudo apt install xserver-xorg i3 i3status rxvt-unicode x11-xserver-utils dmenu libgtk-3-0 \
+yes | sudo apt install xserver-xorg i3 i3status rxvt-unicode x11-xserver-utils dmenu libgtk-3-0 xss-lock \
 xarchiver thunar gvfs autofs gvfs-backends thunar-archive-plugin ntfs-3g \
 fcitx5 fcitx5-mozc fonts-ubuntu fonts-noto-cjk fonts-noto-cjk-extra \
 gimp gimp-gmic filezilla thunderbird ffmpegthumbnailer 
@@ -58,31 +58,17 @@ yes | echo "deb [arch=amd64 signed-by=/usr/share/keyrings/ms-vscode-keyring.gpg]
 yes | sudo apt update
 yes | sudo apt install code
 
-#---dotfiles link---
+#---create dotfiles link---
 echo "---create dotfile links---"
-rm -r ~/.config/alacritty
-rm -r ~/.config/fontconfig
-rm -r ~/.config/neofetch
-rm -r ~/.config/ranger
-rm -r ~/.config/nvim
-rm -r ~/.config/i3 
-rm -r ~/.config/i3status 
-rm -r ~/.config/screengrab
-rm ~/.zshrc
-rm ~/.zprofile
-rm ~/.vimrc
-rm ~/.xinitrc
-rm ~/.Xresources
-rm -r ~/.w3m
-#dotfiles
 set -u
 for dotfile in .??*; do
     [ "$dotfile" = ".git" ] && continue
+    rm -r "$HOME/$dotfile"
     ln -snfv "$(pwd)/$dotfile" "$HOME/$dotfile"
 done
-#config
 cd config
 for conf in ??*; do
+    rm -r "$HOME/.config/$conf"
     ln -snfv "$(pwd)/$conf" "$HOME/.config/$conf"
 done
 cd ..

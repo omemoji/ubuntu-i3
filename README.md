@@ -1,24 +1,67 @@
-# dotfiles
-## About this dotfiles
-This dotfiles add ubuntu-server a desktop environment on i3 wm.
+# Ubuntu-i3
 
-## Get Ubuntu Server 22.04
+## About this repository
+
+<img src="https://assets.ubuntu.com/v1/29985a98-ubuntu-logo32.png" width="100px">
+
+The script `install.sh` builds a i3-wm-based desktop environment on Ubuntu Server 22.04.
+
+## How to use
+
+### 1: Get and install Ubuntu Server 22.04
+
 https://ubuntu.com/download/server
 
-### Apps installed for example
-- terminal: rxvt-unicode
-- browser: Google Chrome, w3m(CUI)
-- editor: Visual Studio Code
-- file manager: Thunar, Ranger(CUI)
-- image viewer: Ristretto
-- PDF viewer: evince
-- media player: VLC
-- image editor: GIMP, Inkscape 
-- input method: Fcitx5
-- mailer: Thunderbird
+### 2: Do git clone dotfiles and Run `ubuntu-setup.sh`
+
+```
+cd
+git clone https://github.com/omemoji/dotfiles.git
+cd dotfiles
+sh ubuntu-setup.sh
+```
+### 3: Done!🎉
+Ubuntu-i3 doesn't have a display manager and a desktop environment starts with `startx` (it automatically starts by .zprofile.)
+
+
+## Environment
+
+### Applications
+| Categories             | Application        |
+| ---------------------- | ------------------ |
+| Window manager         | i3                 |
+| Launcher               | i3-dmenu-desktop   |
+| Input method(Japanese) | Fcitx5 and Mozc    |
+| Sound                  | PipeWire           |
+| Terminal               | rxvi-unicode       |
+| Browser                | Google chrome      |
+| Mailer                 | Thunderbird        |
+| Editor                 | Visual Studio Code |
+| File manager           | Thunar             |
+| Image viewer           | Ristoretto         |
+| PDF viewer             | Evince             |
+| Media player           | VLC                |
+| Image editor           | GIMP, Inkscape     |
+
+| Categories   | Application(CUI) |
+| ------------ | ---------------- |
+| Shell        | zsh              |
+| Browser      | w3m              |
+| Editor       | Vim, Neovim      |
+| File Manager | Ranger           |
+
+### dotfiles
+```
+.Xresources: config file of rxvt-unicode
+.xinitrc: load .Xresources
+.zshrc: load zsh folder
+.w3m: manage w3m's bookmark
+```
 
 And if you like, (for example) you can install apps below manually.
+
 ### .deb package
+
 ```
 #Alacritty
 yes | sudo add-apt-repository ppa:aslatter/ppa
@@ -36,7 +79,9 @@ yes | sudo add-apt-repository ppa:obsproject/obs-studio
 yes | sudo apt update
 yes | sudo apt install obs-studio
 ```
+
 ### Development
+
 ```
 #virtual machine
 yes | sudo apt install qemu-system libvirt-clients libvirt-daemon-system
@@ -55,7 +100,9 @@ yes | sudo npm install n -g
 yes | sudo n lts
 yes | sudo apt purge nodejs npm
 ```
+
 ### Flatpak
+
 ```
 #Flatpak
 yes | sudo apt install flatpak
@@ -70,7 +117,7 @@ yes | flatpak install flathub org.kde.krita
 yes | flatpak install flathub com.slack.Slack
 yes | flatpak install flathub com.discordapp.Discord
 
-#Game 
+#Game
 yes | flatpak install flathub com.valvesoftware.Steam
 yes | flatpak install flathub org.ppsspp.PPSSPP
 yes | flatpak install flathub org.citra_emu.citra

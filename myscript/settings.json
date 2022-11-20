@@ -29,7 +29,6 @@
     "workbench.editorAssociations": {
         "*.ISO": "hexEditor.hexedit",
         "*.bin": "hexEditor.hexedit",
-        "*.obj": "3dviewer.viewer",
         "*.exe": "hexEditor.hexedit"
     },
     "terminal.integrated.enableMultiLinePasteWarning": false,
