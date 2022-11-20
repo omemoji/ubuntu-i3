@@ -32,7 +32,7 @@ yes | sudo apt purge needrestart
 ##Neovim
 yes | sudo add-apt-repository ppa:neovim-ppa/stable
 yes | sudo apt update
-yes | sudo apt install nvim
+yes | sudo apt install neovim
 
 #---GUI---
 echo "---install GUI apps---"
