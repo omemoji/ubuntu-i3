@@ -81,4 +81,7 @@ for conf in ??*; do
 done
 cd ..
 
+chsh -s /usr/bin/zsh
+zsh
+
 echo "---Installation completed---"
