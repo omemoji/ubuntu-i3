@@ -2,7 +2,7 @@
 
 ## About Ubuntu-i3
 
-<img src="https://pbs.twimg.com/media/Fh_6nUKUAAAzGKN?format=jpg&name=large" width="100%">
+<img src="https://pbs.twimg.com/media/FiF1Z8oaYAEBGIJ?format=jpg&name=large" width="100%">
 
 The script `install.sh` builds a i3-wm-based desktop environment on Ubuntu Server 22.04.
 
