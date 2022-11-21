@@ -62,7 +62,7 @@ pipewire-audio-client-libraries \
 yes | sudo apt install libldacbt-abr2 libldacbt-enc2
 yes | sudo apt install wireplumber pipewire-media-session-
 systemctl --user --now enable wireplumber.service
-yes | sudo apt install --no-install-recommends pavucontrol
+yes | sudo apt install --no-install-recommends pavucontrol pulseaudio-utils
 
 echo "---change caps to ctrl---"
 sudo cp keyboard /etc/default/keyboard
