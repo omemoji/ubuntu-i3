@@ -66,6 +66,8 @@ echo "---change caps to ctrl---"
 sudo cp keyboard /etc/default/keyboard
 sudo systemctl restart console-setup
 
+yes | sudo apt autoremove
+
 for dotfile in .??*; do
     [ "$dotfile" = ".git" ] && continue
     rm -r "$HOME/$dotfile"
