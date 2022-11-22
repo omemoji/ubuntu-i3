@@ -1,18 +1,14 @@
 # Ubuntu-i3
 
-## About Ubuntu-i3
+<img src="sample.png" width="100%">
 
-<img src="https://pbs.twimg.com/media/FiF1Z8oaYAEBGIJ?format=jpg&name=large" width="100%">
+A i3-wm-based desktop environment on Ubuntu Server 22.04.
 
-The script `install.sh` builds a i3-wm-based desktop environment on Ubuntu Server 22.04.
+## Usage
 
-## How to use
+1. [Get and install Ubuntu Server 22.04 on your computer](https://ubuntu.com/download/server)
 
-### 1: Get and install Ubuntu Server 22.04 on your computer
-
-https://ubuntu.com/download/server
-
-### 2: Run `install.sh`
+2. Run `install.sh`
 
 ```
 git clone https://github.com/omemoji/ubuntu-i3.git
@@ -38,7 +34,7 @@ sudo apt install --no-install-recommends lightdm lightdm-gtk-greeter lightdm-gtk
 | Window manager         | i3                 |
 | Launcher               | i3-dmenu-desktop   |
 | Input method(Japanese) | Fcitx5 and Mozc    |
-| Sound                  | PipeWire           |
+| Sound                  | PipeWire(AAC codec)|
 | Terminal               | rxvt-unicode       |
 | Browser                | Google Chrome      |
 | Mailer                 | Thunderbird        |
