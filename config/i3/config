@@ -213,13 +213,12 @@ bindsym $mod+r mode "resize"
 #---my config---#
 #exec --no-startup-id
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec --no-startup-id picom
+exec_always --no-startup-id picom
 exec --no-startup-id fcitx5
-exec --no-startup-id "feh --bg-fill ~/Pictures/wallpaper/wallpaper01.png"
+exec_always --no-startup-id "feh --bg-fill ~/Pictures/wallpaper/wallpaper01.png"
 
 #bindsym
 bindsym $mod+c exec code
-bindsym $mod+g exec google-chrome
 bindsym Print exec --no-startup-id screengrab
 
 #remove window title
